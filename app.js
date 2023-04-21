@@ -11,7 +11,7 @@
 var taskInput=document.getElementById("new-task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
 var incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #incompleteTasks
-var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
+var completedTasksHolder = document.querySelector("complited__list");//completed-tasks
 
 
 //New task list item
@@ -155,9 +155,9 @@ addButton.addEventListener("click",ajaxRequest);
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
-    var checkBox=taskListItem.querySelector("input[type=checkbox]");
-    var editButton=taskListItem.querySelector("button.edit");
-    var deleteButton=taskListItem.querySelector("button.delete");
+  var checkBox = taskListItem.querySelector(".item__checkbox");
+  var editButton = taskListItem.querySelector(".button--edit");
+  var deleteButton = taskListItem.querySelector(".button--delete");
 
 
     //Bind editTask to edit button.
