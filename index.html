@@ -40,18 +40,20 @@
           </button>
         </li>
       </ul>
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li>
-          <input type="checkbox" checked>
-          <label class="task">See the Doctor</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
-            <img src="./remove.svg" alt="remove">
-          </button>
-        </li>
-      </ul>
+      <section class="complited">
+        <h3 class="complited__title title">Completed</h3>
+        <ul class="complited__list" id="completed-tasks">
+          <li class="complited__item item">
+            <input class="item__checkbox" type="checkbox" checked>
+            <label class="item__title item__title--complited">See the Doctor</label>
+            <input class="item__input" type="text" >
+            <button class="button button--edit">Edit</button>
+            <button class="button button--delete">
+              <img class="item__delete-img" src="./remove.svg" alt="remove">
+            </button>
+          </li>
+        </ul>
+      </section>
     </main>
     <script src="app.js"></script>
   </body>
