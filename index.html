@@ -12,29 +12,29 @@
       <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
       <main class="main">
-        <section class="new-task" id="topSectionForAddingElementToList">
+        <section class="new-task">
           <h3 class="title title--new-task" for="new-task">Add Item</h3>
           <div class="new-task__wrapper">
-            <input class="input new-task__input" id="new-task"  type="text">
+            <input class="input new-task__input" type="text">
             <button class="button button--new-task">Add</button>
           </div>
         </section>
       <section class="incomplited">
         <h3 class="incomplited__title title">Todo</h3>
-        <ul class="incomplited__list list" id="incompleteTasks">
+        <ul class="incomplited__list list">
           <li class="incomplited__item item">
             <input class="item__checkbox" type="checkbox">
             <label class="item__title">Pay Bills</label>
-            <input class="item__input--non-edit input" type="text" >
+            <input class="item__input input" type="text" >
             <button class="button button--edit">Edit</button>
             <button class="button button--delete">
               <img class="item__delete-img" src="./remove.svg" alt="remove">
             </button>
           </li>
-          <li class="incomplited__item incomplited__item--edit-mode item">
+          <li class="incomplited__item edit-mode item">
             <input class="item__checkbox" type="checkbox">
-            <label class="item__title--edit">Go Shopping</label>
-            <input class="item__input--edit input" type="text" value="Go Shopping" >
+            <label class="item__title">Go Shopping</label>
+            <input class="item__input input" type="text" value="Go Shopping" >
             <button class="button button--edit">Save</button>
             <button class="button button--delete">
               <img class="item__delete-img" src="./remove.svg" alt="remove">
@@ -44,7 +44,7 @@
       </section>
       <section class="complited">
         <h3 class="complited__title title">Completed</h3>
-        <ul class="complited__list list" id="completed-tasks">
+        <ul class="complited__list list">
           <li class="complited__item item">
             <input class="item__checkbox" type="checkbox" checked>
             <label class="item__title item__title--complited">See the Doctor</label>

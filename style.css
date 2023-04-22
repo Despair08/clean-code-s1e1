@@ -146,15 +146,15 @@ h3{
 }
 
 /* Edit Task */
-.item__input--non-edit {
+.item__input {
   display: none
 }
 
-.item__input--edit {
+.edit-mode > .item__input {
   display: inline-block;
   width: 224px
 }
 
-.item__title--edit {
+.edit-mode > .item__title {
   display: none;
 }
